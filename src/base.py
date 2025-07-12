@@ -6,7 +6,16 @@ import streamlit as st
 
 from src.exceptions import MissingTransitionError
 
-write = st.markdown
+write: callable
+try:
+    from streamlit.runtime.scriptrunner import get_script_run_ctx
+
+    if not get_script_run_ctx():
+        write = print
+    else:
+        write = st.markdown
+except ModuleNotFoundError:
+    write = print
 
 
 class Direction(Enum):
