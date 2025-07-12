@@ -1,0 +1,5446 @@
+-> δ(q_start, ('1', 'B', 'B'))
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B ...
+F2:         | B | B | B | B | B | B | B | B ...
+F3:         | B | B | B | B | B | B | B | B ...
+CTRL:                 ^   q_start
+
+Próximo estado: q0 (Parte da sub-rotina: init)
+Escrever:       ('1', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', 'B', 'B'))
+Sub-rotina: init
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B ...
+F2:         | B | B | B | B | B | B | B ...
+F3:         | B | B | B | B | B | B | B ...
+CTRL:                 ^   init__q0
+
+Próximo estado: q0 (Parte da sub-rotina: init)
+Escrever:       ('1', '0', 'B')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', 'B', 'B'))
+Sub-rotina: init
+F1:         | 1 | 1 | 0 | 0 | 0 | B ...
+F2:         | B | 0 | B | B | B | B ...
+F3:         | B | B | B | B | B | B ...
+CTRL:                 ^   init__q0
+
+Próximo estado: q0 (Parte da sub-rotina: init)
+Escrever:       ('0', '0', 'B')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', 'B', 'B'))
+Sub-rotina: init
+F1:         | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | B | B | B | B ...
+F3:         | B | B | B | B | B | B | B ...
+CTRL:                     ^   init__q0
+
+Próximo estado: q0 (Parte da sub-rotina: init)
+Escrever:       ('0', '0', 'B')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', 'B', 'B'))
+Sub-rotina: init
+F1:         | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | B | B | B | B ...
+F3:         | B | B | B | B | B | B | B | B ...
+CTRL:                         ^   init__q0
+
+Próximo estado: q0 (Parte da sub-rotina: init)
+Escrever:       ('0', '0', 'B')
+Direção:         RIGHT
+
+
+->          δ(q0, ('B', 'B', 'B'))
+Sub-rotina: init
+F1:         | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 0 | B | B | B | B ...
+F3:         | B | B | B | B | B | B | B | B | B ...
+CTRL:                             ^   init__q0
+
+Próximo estado: q_write0 (Parte da sub-rotina: init)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q_write0, ('0', '0', 'B'))
+Sub-rotina: init
+F1:         | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 0 | B | B | B ...
+F3:         | B | B | B | B | B | B | B | B ...
+CTRL:                         ^   init__q_write0
+
+Próximo estado: q_write1 (Parte da sub-rotina: init)
+Escrever:       ('0', '0', 'B')
+Direção:         LEFT
+
+
+->          δ(q_write1, ('0', '0', 'B'))
+Sub-rotina: init
+F1:         | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 0 | B | B ...
+F3:         | B | B | B | B | B | B | B ...
+CTRL:                     ^   init__q_write1
+
+Próximo estado: q_fill_zeros (Parte da sub-rotina: init)
+Escrever:       ('0', '1', 'B')
+Direção:         LEFT
+
+
+->          δ(q_fill_zeros, ('0', '0', 'B'))
+Sub-rotina: init
+F1:         | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | B | B | B | B ...
+CTRL:                 ^   init__q_fill_zeros
+
+Próximo estado: q_fill_zeros (Parte da sub-rotina: init)
+Escrever:       ('0', '0', 'B')
+Direção:         LEFT
+
+
+->          δ(q_fill_zeros, ('1', '0', 'B'))
+Sub-rotina: init
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | B | B | B | B | B ...
+CTRL:                 ^   init__q_fill_zeros
+
+Próximo estado: q_fill_zeros (Parte da sub-rotina: init)
+Escrever:       ('1', '0', 'B')
+Direção:         LEFT
+
+
+->          δ(q_fill_zeros, ('1', 'B', 'B'))
+Sub-rotina: init
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | B | B | B | B | B | B ...
+CTRL:                 ^   init__q_fill_zeros
+
+Próximo estado: q_fill_zeros (Parte da sub-rotina: init)
+Escrever:       ('1', '0', 'B')
+Direção:         LEFT
+
+
+->          δ(q_fill_zeros, ('B', 'B', 'B'))
+Sub-rotina: init
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | B | B | B | B | B | B | B ...
+CTRL:                 ^   init__q_fill_zeros
+
+Próximo estado: q_rewind (Parte da sub-rotina: init)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind, ('1', '0', 'B'))
+Sub-rotina: init
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | B | B | B | B | B | B ...
+CTRL:                 ^   init__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: init)
+Escrever:       ('1', '0', 'B')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('B', 'B', 'B'))
+Sub-rotina: init
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | B | B | B | B | B | B | B ...
+CTRL:                 ^   init__q_rewind
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_eq)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', 'B'))
+Sub-rotina: compare_eq
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | B | B | B | B | B | B ...
+CTRL:                 ^   compare_eq__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_eq)
+Escrever:       ('1', '0', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', 'B'))
+Sub-rotina: compare_eq
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | B | B | B | B | B ...
+CTRL:                 ^   compare_eq__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_eq)
+Escrever:       ('1', '0', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', 'B'))
+Sub-rotina: compare_eq
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | B | B | B | B | B ...
+CTRL:                     ^   compare_eq__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_eq)
+Escrever:       ('0', '0', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '1', 'B'))
+Sub-rotina: compare_eq
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | B | B | B | B | B ...
+CTRL:                         ^   compare_eq__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_eq)
+Escrever:       ('0', '1', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', 'B'))
+Sub-rotina: compare_eq
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | B | B | B | B | B | B | B | B ...
+CTRL:                             ^   compare_eq__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_eq)
+Escrever:       ('0', '0', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('B', 'B', 'B'))
+Sub-rotina: compare_eq
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | B | B | B | B | B | B | B | B | B ...
+CTRL:                                 ^   compare_eq__q_seek_end
+
+Próximo estado: q_compare (Parte da sub-rotina: compare_eq)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q_compare, ('0', '0', 'B'))
+Sub-rotina: compare_eq
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | B | B | B | B | B | B | B | B ...
+CTRL:                             ^   compare_eq__q_compare
+
+Próximo estado: q_compare (Parte da sub-rotina: compare_eq)
+Escrever:       ('0', '0', 'B')
+Direção:         LEFT
+
+
+->          δ(q_compare, ('0', '1', 'B'))
+Sub-rotina: compare_eq
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | B | B | B | B | B ...
+CTRL:                         ^   compare_eq__q_compare
+
+Próximo estado: q_notequal_rewind (Parte da sub-rotina: compare_eq)
+Escrever:       ('0', '1', 'B')
+Direção:         LEFT
+
+
+->          δ(q_notequal_rewind, ('0', '0', 'B'))
+Sub-rotina: compare_eq
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | B | B | B | B | B ...
+CTRL:                     ^   compare_eq__q_notequal_rewind
+
+Próximo estado: q_notequal_rewind (Parte da sub-rotina: compare_eq)
+Escrever:       ('0', '0', 'B')
+Direção:         LEFT
+
+
+->          δ(q_notequal_rewind, ('1', '0', 'B'))
+Sub-rotina: compare_eq
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | B | B | B | B | B ...
+CTRL:                 ^   compare_eq__q_notequal_rewind
+
+Próximo estado: q_notequal_rewind (Parte da sub-rotina: compare_eq)
+Escrever:       ('1', '0', 'B')
+Direção:         LEFT
+
+
+->          δ(q_notequal_rewind, ('1', '0', 'B'))
+Sub-rotina: compare_eq
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | B | B | B | B | B | B ...
+CTRL:                 ^   compare_eq__q_notequal_rewind
+
+Próximo estado: q_notequal_rewind (Parte da sub-rotina: compare_eq)
+Escrever:       ('1', '0', 'B')
+Direção:         LEFT
+
+
+->          δ(q_notequal_rewind, ('B', 'B', 'B'))
+Sub-rotina: compare_eq
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | B | B | B | B | B | B | B ...
+CTRL:                 ^   compare_eq__q_notequal_rewind
+
+Próximo estado: q_copy (Parte da sub-rotina: copy)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_copy, ('1', '0', 'B'))
+Sub-rotina: copy
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | B | B | B | B | B | B ...
+CTRL:                 ^   copy__q_copy
+
+Próximo estado: q_copy (Parte da sub-rotina: copy)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_copy, ('1', '0', 'B'))
+Sub-rotina: copy
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | B | B | B | B | B | B ...
+CTRL:                 ^   copy__q_copy
+
+Próximo estado: q_copy (Parte da sub-rotina: copy)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_copy, ('0', '0', 'B'))
+Sub-rotina: copy
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 1 | B | B | B | B | B ...
+CTRL:                     ^   copy__q_copy
+
+Próximo estado: q_copy (Parte da sub-rotina: copy)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_copy, ('0', '1', 'B'))
+Sub-rotina: copy
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 1 | 0 | B | B | B | B ...
+CTRL:                         ^   copy__q_copy
+
+Próximo estado: q_copy (Parte da sub-rotina: copy)
+Escrever:       ('0', '1', '0')
+Direção:         RIGHT
+
+
+->          δ(q_copy, ('0', '0', 'B'))
+Sub-rotina: copy
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | B | B | B | B ...
+CTRL:                             ^   copy__q_copy
+
+Próximo estado: q_copy (Parte da sub-rotina: copy)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_copy, ('B', 'B', 'B'))
+Sub-rotina: copy
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+CTRL:                                 ^   copy__q_copy
+
+Próximo estado: q_rewind (Parte da sub-rotina: copy)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('0', '0', '0'))
+Sub-rotina: copy
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+CTRL:                             ^   copy__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: copy)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('0', '1', '0'))
+Sub-rotina: copy
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                         ^   copy__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: copy)
+Escrever:       ('0', '1', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('0', '0', '0'))
+Sub-rotina: copy
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   copy__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: copy)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('1', '0', '1'))
+Sub-rotina: copy
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   copy__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: copy)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('1', '0', '1'))
+Sub-rotina: copy
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   copy__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: copy)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('B', 'B', 'B'))
+Sub-rotina: copy
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   copy__q_rewind
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '1', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+CTRL:                                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '1', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind_msb, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind_msb, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '1', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                         ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+CTRL:                                 ^   subtract__q0
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '1', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                         ^   subtract__q1
+
+Próximo estado: q2 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '1')
+Direção:         LEFT
+
+
+->          δ(q2, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                     ^   subtract__q2
+
+Próximo estado: q2 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q2, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q2
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q1, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '1', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B | B | B ...
+CTRL:                                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '1', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind_msb, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind_msb, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                     ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '1', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                         ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B | B | B ...
+CTRL:                                 ^   subtract__q0
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '1', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                         ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                     ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q1, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '1', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B | B | B ...
+CTRL:                                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '1', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind_msb, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind_msb, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                     ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '1', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                         ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B | B | B ...
+CTRL:                                 ^   subtract__q0
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '1', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                         ^   subtract__q1
+
+Próximo estado: q2 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '1')
+Direção:         LEFT
+
+
+->          δ(q2, ('0', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                     ^   subtract__q2
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q1, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '1', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B | B | B ...
+CTRL:                                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '1', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind_msb, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind_msb, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                     ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '1', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                         ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B | B | B ...
+CTRL:                                 ^   subtract__q0
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '1', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                         ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q1, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '1', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B | B | B ...
+CTRL:                                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '1', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind_msb, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind_msb, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '1', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                         ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B | B | B ...
+CTRL:                                 ^   subtract__q0
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '1', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                         ^   subtract__q1
+
+Próximo estado: q2 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '1')
+Direção:         LEFT
+
+
+->          δ(q2, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                     ^   subtract__q2
+
+Próximo estado: q2 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q2, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 1 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q2
+
+Próximo estado: q2 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q2, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 1 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q2
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '1', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B | B | B ...
+CTRL:                                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '1', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_msb, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                     ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '1', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                         ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B | B | B ...
+CTRL:                                 ^   subtract__q0
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '1', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                         ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                     ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '1', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B | B | B ...
+CTRL:                                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '1', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_msb, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                     ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '1', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                         ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B | B | B ...
+CTRL:                                 ^   subtract__q0
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '1', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 0 | 0 | B | B ...
+CTRL:                         ^   subtract__q1
+
+Próximo estado: q2 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '1')
+Direção:         LEFT
+
+
+->          δ(q2, ('0', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                     ^   subtract__q2
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '1', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B | B | B ...
+CTRL:                                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '1', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_msb, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                     ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '1', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                         ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B | B | B ...
+CTRL:                                 ^   subtract__q0
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '1', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                         ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '1', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B | B | B ...
+CTRL:                                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '1', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_msb, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '1', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                         ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B | B | B ...
+CTRL:                                 ^   subtract__q0
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '1', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 0 | 0 | B | B ...
+CTRL:                         ^   subtract__q1
+
+Próximo estado: q2 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '1')
+Direção:         LEFT
+
+
+->          δ(q2, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 0 | 1 | 0 | B | B ...
+CTRL:                     ^   subtract__q2
+
+Próximo estado: q2 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q2, ('1', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 1 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q2
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '1', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B | B | B ...
+CTRL:                                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '1', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_msb, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('0', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_compare_msb
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                     ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '1', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                         ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B | B | B ...
+CTRL:                                 ^   subtract__q0
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '1', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                         ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                     ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '1', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B | B | B ...
+CTRL:                                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '1', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_msb, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('0', '0', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_compare_msb
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                     ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '1', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                         ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B | B | B ...
+CTRL:                                 ^   subtract__q0
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '1', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 0 | 0 | B | B ...
+CTRL:                         ^   subtract__q1
+
+Próximo estado: q2 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '1')
+Direção:         LEFT
+
+
+->          δ(q2, ('0', '0', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 1 | 1 | 0 | B | B ...
+CTRL:                     ^   subtract__q2
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '1', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '1')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+CTRL:                                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '1', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '1')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_msb, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_compare_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('0', '1', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_compare_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '1')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_compare_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+CTRL:                                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_rewind_true
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('0', '1', '1'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_rewind_true
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '1')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_rewind_true
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q_rewind_true (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_true, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_true
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                 ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                     ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '1', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                         ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '1')
+Direção:         RIGHT
+
+
+->          δ(q0, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q0
+
+Próximo estado: q0 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q0, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+CTRL:                                 ^   subtract__q0
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+CTRL:                             ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '1', '1'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+CTRL:                         ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '1', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('0', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q1 (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q1, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q1
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind, ('1', '0', '0'))
+Sub-rotina: subtract
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_rewind (Parte da sub-rotina: subtract)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind, ('B', 'B', 'B'))
+Sub-rotina: subtract
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   subtract__q_rewind
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '1', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_seek_end
+
+Próximo estado: q_seek_end (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_seek_end, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B | B | B ...
+CTRL:                                 ^   compare_ge__q_seek_end
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B | B ...
+CTRL:                             ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '1', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_compare_len (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_compare_len, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_len
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_rewind_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_rewind_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_msb, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_compare_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_compare_msb
+
+Próximo estado: q_compare_msb (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_compare_msb, ('0', '1', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                         ^   compare_ge__q_compare_msb
+
+Próximo estado: q_rewind_false (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '1', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_false, ('0', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   compare_ge__q_rewind_false
+
+Próximo estado: q_rewind_false (Parte da sub-rotina: compare_ge)
+Escrever:       ('0', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_false, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_false
+
+Próximo estado: q_rewind_false (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_false, ('1', '0', '0'))
+Sub-rotina: compare_ge
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_false
+
+Próximo estado: q_rewind_false (Parte da sub-rotina: compare_ge)
+Escrever:       ('1', '0', '0')
+Direção:         LEFT
+
+
+->          δ(q_rewind_false, ('B', 'B', 'B'))
+Sub-rotina: compare_ge
+F1:         | B | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   compare_ge__q_rewind_false
+
+Próximo estado: q_check (Parte da sub-rotina: check_remainder)
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+->          δ(q_check, ('1', '0', '0'))
+Sub-rotina: check_remainder
+F1:         | B | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   check_remainder__q_check
+
+Próximo estado: q_check (Parte da sub-rotina: check_remainder)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_check, ('1', '0', '0'))
+Sub-rotina: check_remainder
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                 ^   check_remainder__q_check
+
+Próximo estado: q_check (Parte da sub-rotina: check_remainder)
+Escrever:       ('1', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_check, ('0', '0', '0'))
+Sub-rotina: check_remainder
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                     ^   check_remainder__q_check
+
+Próximo estado: q_check (Parte da sub-rotina: check_remainder)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_check, ('0', '1', '0'))
+Sub-rotina: check_remainder
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B ...
+CTRL:                         ^   check_remainder__q_check
+
+Próximo estado: q_check (Parte da sub-rotina: check_remainder)
+Escrever:       ('0', '1', '0')
+Direção:         RIGHT
+
+
+->          δ(q_check, ('0', '0', '0'))
+Sub-rotina: check_remainder
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B | B ...
+CTRL:                             ^   check_remainder__q_check
+
+Próximo estado: q_check (Parte da sub-rotina: check_remainder)
+Escrever:       ('0', '0', '0')
+Direção:         RIGHT
+
+
+->          δ(q_check, ('B', 'B', 'B'))
+Sub-rotina: check_remainder
+F1:         | B | 1 | 1 | 0 | 0 | 0 | B | B | B | B ...
+F2:         | B | 0 | 0 | 0 | 1 | 0 | B | B | B | B ...
+F3:         | B | 0 | 0 | 0 | 0 | 0 | B | B | B | B ...
+CTRL:                                 ^   check_remainder__q_check
+
+Próximo estado: q_reject
+Escrever:       ('B', 'B', 'B')
+Direção:         RIGHT
+
+
+
+A máquina encerrou sua execução.
+Estado final: q_reject
+Conteúdo da fita 1: 11000
+Conteúdo da fita 2: 00010
+Conteúdo da fita 3: 00000
+Posição da cabeça: 6
+Contagem de passos: 452
+==| Resultado da Máquina de Turing |==
+Resultado: q_reject, Passos: 452
+Tempo gasto: 0.006289 segundos
+
+Para fins de comparação, a função is_prime_fn também será executada.
+
+==| Resultado da função is_prime_fn |==
+Resultado da função: False, Passos: 2
+Tempo gasto na função: 0.000004 segundos
+
+==| Comparação de Desempenho |==
+A máquina de Turing levou 0.006289 segundos, enquanto a função levou 0.000004 segundos.
+A máquina de Turing foi 157125.00% mais lenta que a função.
+A máquina de Turing executou 452 passos, enquanto a função executou 2 passos.
+==| Fim da execução |==

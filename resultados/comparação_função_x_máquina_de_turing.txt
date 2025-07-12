@@ -1,0 +1,126 @@
+Abaixo estão alguns resultados complementares sobre a quantidade de passos necessários para computar se determinado valor é primo ou não, usando uma função simples `is_prime` e a máquina de turing definida neste projeto.
+
+Máquina de Turing: 72 passos para verificar se 3 é primo.
+Função is_prime:   0 passos para verificar se 3 é primo.
+
+Máquina de Turing: 268 passos para verificar se 5 é primo.
+Função is_prime:   1 passos para verificar se 5 é primo.
+
+Máquina de Turing: 456 passos para verificar se 7 é primo.
+Função is_prime:   2 passos para verificar se 7 é primo.
+
+Máquina de Turing: 1062 passos para verificar se 11 é primo.
+Função is_prime:   4 passos para verificar se 11 é primo.
+
+Máquina de Turing: 1344 passos para verificar se 13 é primo.
+Função is_prime:   5 passos para verificar se 13 é primo.
+
+Máquina de Turing: 2248 passos para verificar se 17 é primo.
+Função is_prime:   7 passos para verificar se 17 é primo.
+
+Máquina de Turing: 2592 passos para verificar se 19 é primo.
+Função is_prime:   8 passos para verificar se 19 é primo.
+
+Máquina de Turing: 3234 passos para verificar se 23 é primo.
+Função is_prime:   10 passos para verificar se 23 é primo.
+
+Máquina de Turing: 4296 passos para verificar se 29 é primo.
+Função is_prime:   13 passos para verificar se 29 é primo.
+
+Máquina de Turing: 4688 passos para verificar se 31 é primo.
+Função is_prime:   14 passos para verificar se 31 é primo.
+
+Máquina de Turing: 6838 passos para verificar se 37 é primo.
+Função is_prime:   17 passos para verificar se 37 é primo.
+
+Máquina de Turing: 7652 passos para verificar se 41 é primo.
+Função is_prime:   19 passos para verificar se 41 é primo.
+
+Máquina de Turing: 8098 passos para verificar se 43 é primo.
+Função is_prime:   20 passos para verificar se 43 é primo.
+
+Máquina de Turing: 8878 passos para verificar se 47 é primo.
+Função is_prime:   22 passos para verificar se 47 é primo.
+
+Máquina de Turing: 10220 passos para verificar se 53 é primo.
+Função is_prime:   25 passos para verificar se 53 é primo.
+
+Máquina de Turing: 11514 passos para verificar se 59 é primo.
+Função is_prime:   28 passos para verificar se 59 é primo.
+
+Máquina de Turing: 12126 passos para verificar se 61 é primo.
+Função is_prime:   29 passos para verificar se 61 é primo.
+
+Máquina de Turing: 15528 passos para verificar se 67 é primo.
+Função is_prime:   32 passos para verificar se 67 é primo.
+
+Máquina de Turing: 16536 passos para verificar se 71 é primo.
+Função is_prime:   34 passos para verificar se 71 é primo.
+
+Máquina de Turing: 23572 passos para verificar se 97 é primo.
+Função is_prime:   47 passos para verificar se 97 é primo.
+
+Máquina de Turing: 436656 passos para verificar se 997 é primo.
+Função is_prime:   497 passos para verificar se 997 é primo.
+
+Máquina de Turing: 94 passos para verificar se 4 é primo.
+Função is_prime:   1 passos para verificar se 4 é primo.
+
+Máquina de Turing: 116 passos para verificar se 6 é primo.
+Função is_prime:   1 passos para verificar se 6 é primo.
+
+Máquina de Turing: 171 passos para verificar se 8 é primo.
+Função is_prime:   1 passos para verificar se 8 é primo.
+
+Máquina de Turing: 323 passos para verificar se 9 é primo.
+Função is_prime:   2 passos para verificar se 9 é primo.
+
+Máquina de Turing: 197 passos para verificar se 10 é primo.
+Função is_prime:   1 passos para verificar se 10 é primo.
+
+Máquina de Turing: 223 passos para verificar se 12 é primo.
+Função is_prime:   1 passos para verificar se 12 é primo.
+
+Máquina de Turing: 249 passos para verificar se 14 é primo.
+Função is_prime:   1 passos para verificar se 14 é primo.
+
+Máquina de Turing: 453 passos para verificar se 15 é primo.
+Função is_prime:   2 passos para verificar se 15 é primo.
+
+Máquina de Turing: 332 passos para verificar se 16 é primo.
+Função is_prime:   1 passos para verificar se 16 é primo.
+
+Máquina de Turing: 362 passos para verificar se 18 é primo.
+Função is_prime:   1 passos para verificar se 18 é primo.
+
+Máquina de Turing: 392 passos para verificar se 20 é primo.
+Função is_prime:   1 passos para verificar se 20 é primo.
+
+Máquina de Turing: 700 passos para verificar se 21 é primo.
+Função is_prime:   2 passos para verificar se 21 é primo.
+
+Máquina de Turing: 422 passos para verificar se 22 é primo.
+Função is_prime:   1 passos para verificar se 22 é primo.
+
+Máquina de Turing: 452 passos para verificar se 24 é primo.
+Função is_prime:   1 passos para verificar se 24 é primo.
+
+Máquina de Turing: 1294 passos para verificar se 25 é primo.
+Função is_prime:   4 passos para verificar se 25 é primo.
+
+Máquina de Turing: 482 passos para verificar se 26 é primo.
+Função is_prime:   1 passos para verificar se 26 é primo.
+
+Máquina de Turing: 850 passos para verificar se 27 é primo.
+Função is_prime:   2 passos para verificar se 27 é primo.
+
+Máquina de Turing: 512 passos para verificar se 28 é primo.
+Função is_prime:   1 passos para verificar se 28 é primo.
+
+Máquina de Turing: 2068 passos para verificar se 98 é primo.
+Função is_prime:   1 passos para verificar se 98 é primo.
+
+Máquina de Turing: 26079 passos para verificar se 998 é primo.
+Função is_prime:   1 passos para verificar se 998 é primo.
+
+✅ Todos os testes passaram com sucesso!
